@@ -41,28 +41,43 @@ Beyond my work, I'm actively involved in the Brazilian tech community and am eag
 **Implementation**
 =====================
 
+- Criar a API (interface da api) pra eu conseguir ter uma noção mais clara do que vai perciso 
+  -  como que entra o JSON Schema
+  -  como que os dadaos vao ser tratados e validados 
+  -  como que vai ser o ouput 
+- Mapear todas as funções que vamos precisar criar para validar se o JSON segue o padrão JSON Schema 
+  - mapear as validações simples: string, number, boolean.... ir na doc confirmar 
+  - mapear propriedades como min, max etc....
+  - mapear as validações mais complexas como object and arrays
+  - create schema composition
+  - validar condições
+- Mapear todas as funções para validar se o input do usuário é valido baseado schema    
+  - validação simples baseada no tipo
+  - validação do valor conforme as propriedades (min: 10 max:20 valor:15 true)
+  - validação de valores condicionais 
+  
 
 
 
 **Timeline**
 =====================
 
-| Date  | Plan |
-| ------------- | ------------- |
-| February 22 - March 19| ~~Find a cool project, join the community, hand in the qualification task, and create the proposal for the GSoC.~~ |
-| March 20 - April 4| ~~Apply for the project and continue participating in the community.~~ |
-| May 4  | Accepted GSoC contributor projects announced.
-| May 4 - 28  |  Community Bonding Period.|
-| May 29 | Coding officially begins!  |
-| July 10  | Mentors and GSoC contributors can begin submitting midterm evaluations  |
-|July 14  | Content Cell  |
-| July 14 - August 21  | Content Cell  |
-| August 21 - 28  | Content Cell  |
-| August 28 - September 4  | Content Cell  |
-|September 5  | Content Cell  |
-| September 4 - November 6  | Content Cell  |
-| November 6  | Content Cell  |
-| November 13  | Content Cell  |
+| Date   | Event  |
+|----------------------|------------------------------------------------------------------------------|
+| February 22 - March 19| ~~Find a cool project, join the community, hand in the qualification task, and create the proposal for the GSoC.~~   |
+| March 20 - April 4      | ~~Apply for the project and continue participating in the community.~~  |
+| April 27      | GSoC contributor proposal rankings due from Org Admins                        |
+| May 4 - 28           | Write articles for the Dev community discussing the use cases of Schema Composition, discuss my ideas on how to implement the project with the mentor, study more about the project and attend the weekly meetings of the project.| GSoC contributors get to know mentors, read documentation, get up to speed to begin working on their projects |
+| May 29    - July 10          | NAO ESQUECER DE PERSONALIZAR!                                       |
+| July 10  - July 14     | Perform a overview of the project alongside the mentor to submit the midterm evalutions        |
+| July 14 - August 14  | Work Period  | GSoC contributors work on their project with guidance from Mentors           |
+| August 14 - 21  | Perform a review of code style and quality, create developer documentation, and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
+| August 21 - 28  | Final week: GSoC contributors submit their final work product and their final mentor evaluation (standard coding period) |
+| August 28 - September 4  | Mentors submit final GSoC contributor evaluations (standard coding period) |
+| September 5          | Initial results of Google Summer of Code 2023 announced                      |
+| September 4 - November 6 | GSoC contributors with extended timelines continue coding                  |
+| November 6    | Final date for all GSoC contributors to submit their final work product and final evaluation |
+| November 13   | Final date for mentors to submit evaluations for GSoC contributor projects with extended deadlines |
 
 **Why me**
 =====================
