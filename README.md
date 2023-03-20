@@ -13,11 +13,13 @@
 
 **About me**
 =====================
-Hello, I'm a full-stack developer with a passion for creating web projects that positively impact people's lives. I've been working in the software development industry for over two years, where I've sought out efficiency and smart solutions to overcome challenges.
+Hello, my name is Francielle Dellamora, and I'm a full-stack developer with a passion for making a positive impact through web development. I'm 21 years old and have been working in the software development industry for over two years, where I've gained valuable experience in finding efficient and innovative solutions to overcome challenges.
 
-My love for computers began when I was young, and I taught myself HTML and CSS to create themes on the Tumblr platform. This experience solidified my decision to pursue a career in web development, where I could combine my passion for technology with my desire to create positive change.
+My love for computers began at a young age, where I taught myself HTML and CSS to create themes on the Tumblr platform. This experience solidified my decision to pursue a career in web development, where I can combine my passion for technology with my desire to make a positive impact.
 
-Beyond my work, I'm actively involved in the Brazilian tech community and am eager to expand my reach by creating content in English. I'm particularly passionate about creating programming content and sharing my knowledge with others. Ultimately, my goal is to be a role model for women in the industry and inspire others to pursue their passions in tech.
+When I'm not coding, I enjoy exploring my interests outside of tech. I love listening to music, working out at the gym, reading books, cooking new dishes, and traveling to new places to meet new people. I'm always eager to discover new things, which is why I love coding - it presents new challenges and opportunities for learning.
+
+In addition to my work as a developer, I'm actively involved in the Brazilian tech community and am excited to expand my reach by creating content in English. I'm particularly passionate about creating programming content and sharing my knowledge with others. Ultimately, I hope to serve as a role model for women in the tech industry, and working in Open Source is the best way to achieve this.
 
 **Project Description**
 =====================
