@@ -91,8 +91,55 @@ At this moment in my career I’m focusing on building projects using TypeScript
 
 
 
-**Why me**
+**My tech background**
 =====================
+## **Projects**
 
+### [Portfolio](dellamora.dev)
+Nov 2022 - Jan 2023
 
+My portfolio website is a hub that showcases my programming articles, work experiences, and public projects and provides a clear overview of my skills. It serves as a personal hub, making it easy to find and access relevant information about me and my work, as well as how to contact me for potential job opportunities or collaborations. Whether you're seeking programming insights or looking for a new project to explore, my portfolio website has everything you need.
+
+On the technical side, I used TypeScript, Next.js to make the site work with SSR, Framer Motion to create the animations, and React-Query to fetch my articles. 
+
+You can read more about the development process [here](https://dev.to/dellamora/o-passo-a-passo-de-como-criei-meu-portfolio-e-como-voce-pode-fazer-o-mesmo-23kf)
+
+### [Rick and Morty Search](https://rickandmorty-ochre.vercel.app/)
+
+The main goal of this project was to create a simple application that would serve as a practical study for the use of TypeScript's generic types and the implementation of React Query. By using the Rick and Morty API to allow users to search for characters, episodes, and locations, this project provides a hands-on approach to learning these technologies.
+
+ps: this was such a fun project that I even wrote an article about it in Portuguese, and who knows, maybe in the future I'll translate it to English...[read here](https://dev.to/dellamora/criei-um-hook-personalizado-para-buscar-dados-da-api-do-rick-and-morty-com-react-query-1c7f)
+
+### [Todo App with Redux Toolkit and Zustand](https://todos-cyan-phi.vercel.app/)
+
+This is a Todo App project developed using two different libraries: Redux Toolkit and Zustand. Both libraries were used for state management in the application, allowing users to create, mark as complete, and delete tasks.
+
+### [DellaFlix](https://dellaflix.dellamora.dev/)
+
+I decided to develop a project inspired by Netflix when I faced the dilemma of every programmer who is building his portoflio, which project would be fun to work on?
+Dellaflix came up as the answer, since I would challenge myself both on the backend by developing a movie API and if the movie searched doesn't exist in my database, look it up in another API (The Movie Database) and on the frontend by cloning Netflix's design.
+
+**Stack**: React • TypeScript • NextJS• TailWindCSS• Express.js • Prisma/SQL/NoSQL
+
+## **Worked Experience**
+
+### RCX - Frontend Developer
+Feb 2023 - Present · 2 mos
+
+**Skills**: Redux.js Toolkit · Redux.js · HTML · React.js · JavaScript · Styled-components · CSS
+
+### Venturus - Frontend Developer
+February 2021 - September 2022 (1 year 8 months)
+
+I have had the opportunity to work on a wide range of projects and tasks.
+These include developing landing pages, creating a web crawler, and
+Page 1 of 2
+building two progressive web applications. Additionally, I have taken on
+the responsibility of **managing daily meetings, sprints, and tasks while also performing analysis on project structure and features to enhance user
+experience and developer experience through refactoring. I have documented
+projects** and worked closely with back-end developers and web designers to
+optimize usability. Finally, I have also organized various team-building events, including programming logic competitions, coding dojos, and other activities
+that promote collaboration and cohesion among team members.
+
+ **Skills**: Redux.js · HTML · TypeScript · React.js · PWA (Progressive Web App) · JavaScript · Firebase · Styled-components · React.Konva · Material-UI · Bootstrap · Figma (Software) · Redux.Sagas
 
