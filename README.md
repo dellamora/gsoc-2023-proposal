@@ -13,13 +13,15 @@
 
 **About me**
 =====================
-Hello, my name is Francielle Dellamora, and I'm a full-stack developer with a passion for making a positive impact through web development. I'm 21 years old and have been working in the software development industry for over two years, where I've gained valuable experience in finding efficient and innovative solutions to overcome challenges.
+I'm a full-stack developer with a passion for making a positive impact through web development. 
 
-My love for computers began at a young age, where I taught myself HTML and CSS to create themes on the Tumblr platform. This experience solidified my decision to pursue a career in web development, where I can combine my passion for technology with my desire to make a positive impact.
+My love for computers began at a young age, where I taught myself HTML and CSS to create themes on the Tumblr platform. This experience solidified my decision to pursue a career in web development, where I can combine my passion for technology with my desire to make a positive impact in the community. 
 
-When I'm not coding, I enjoy exploring my interests outside of tech. I love listening to music, working out at the gym, reading books, cooking new dishes, and traveling to new places to meet new people. I'm always eager to discover new things, which is why I love coding - it presents new challenges and opportunities for learning.
+To achieve this goal, I'm particularly passionate about sharing my personal experiences, writing technical content, and working in Open Source. Because of this, I'm actively involved in the Brazilian tech community and am excited to reach more people by creating content in English. 
+I’ve been working in the software development industry for over two years, where I've gained valuable experience in finding efficient and innovative solutions to overcome challenges.
 
-In addition to my work as a developer, I'm actively involved in the Brazilian tech community and am excited to expand my reach by creating content in English. I'm particularly passionate about creating programming content and sharing my knowledge with others. Ultimately, I hope to serve as a role model for women in the tech industry, and working in Open Source is the best way to achieve this.
+At this moment in my career I’m focusing on building projects using TypeScript, Next.js, React, Tailwind CSS, Prisma/SQL/NoSQL, Express.js, and whenever I discover a new and interesting technology to add to my stack, I enjoy writing articles about it.
+
 
 **Project Description**
 =====================
@@ -83,3 +85,6 @@ In addition to my work as a developer, I'm actively involved in the Brazilian te
 
 **Why me**
 =====================
+
+
+
