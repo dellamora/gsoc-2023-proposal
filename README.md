@@ -79,7 +79,6 @@ At this moment in my career I’m focusing on building projects using TypeScript
 | July 3 - July 9 |Create schema composition and validate conditions |
 | July 10 - July 14 |Perform an overview of the project alongside the mentor to submit the midterm evaluations|
 | July 15 - July 31 | Map and implement the functions needed to validate user input based on the schema, and test and debug the functions |
-| July 10  - July 14     | Perform a overview of the project alongside the mentor to submit the midterm evalutions        |
 | July 15 - August 14  |  Write documentation and create user guides, conduct user acceptance testing and make necessary revisions   | GSoC contributors work on their project with guidance from Mentors           |
 | August 14 - 21  | Finalize the project and deploy the API, provide support for any issues or bugs that may arise and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
 | August 21 - 28  | Final week: GSoC contributors submit their final work product and their final mentor evaluation (standard coding period) |
