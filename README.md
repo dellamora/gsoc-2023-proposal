@@ -44,24 +44,22 @@ At this moment in my career I’m focusing on building projects using TypeScript
 
 **Implementation**
 =====================
-
-- Criar a API (interface da api) pra eu conseguir ter uma noção mais clara do que vai perciso 
-  -  como que entra o JSON Schema
-  -  como que os dadaos vao ser tratados e validados 
-  -  como que vai ser o ouput 
-- Mapear todas as funções que vamos precisar criar para validar se o JSON segue o padrão JSON Schema 
-  - mapear as validações simples: string, number, boolean.... ir na doc confirmar 
-  - mapear propriedades como min, max etc....
-  - mapear as validações mais complexas como object and arrays
-  - create schema composition
-  - validar condições
-- Mapear todas as funções para validar se o input do usuário é valido baseado schema    
-  - validação simples baseada no tipo
-  - validação do valor conforme as propriedades (min: 10 max:20 valor:15 true)
-  - validação de valores condicionais 
   
-
-
+- Create the API interface so that I can have a clearer understanding of what is needed:
+  - How the JSON Schema is integrated
+  - How the data will be treated and validated
+  - What the output will be
+- Map all the functions needed to validate whether the JSON follows the JSON Schema standard:
+  - Map the simple validations: string, number, boolean, object, array, and null
+  - Map properties
+  - Map more complex validations, such as objects and arrays
+  - Create schema composition
+  - Validate conditions
+- Map all the functions needed to validate if the user input is valid based on the schema:
+  - Validate simple types
+  - Validate values based on properties (min: 10 max:20 value: 15 true)
+  - Validate conditional values.
+- Write documentation and create user guides
 
 **Timeline**
 =====================
@@ -71,17 +69,28 @@ At this moment in my career I’m focusing on building projects using TypeScript
 | February 22 - March 19| ~~Find a cool project, join the community, hand in the qualification task, and create the proposal for the GSoC.~~   |
 | March 20 - April 4      | ~~Apply for the project and continue participating in the community.~~  |
 | April 27      | GSoC contributor proposal rankings due from Org Admins                        |
-| May 4 - 28           | Write articles for the Dev community discussing the use cases of Schema Composition, discuss my ideas on how to implement the project with the mentor, study more about the project and attend the weekly meetings of the project.| GSoC contributors get to know mentors, read documentation, get up to speed to begin working on their projects |
-| May 29    - July 10          | NAO ESQUECER DE PERSONALIZAR!                                       |
+| May 4 - 14           | Research and study the project, read documentation, and attend weekly meetings |
+| May 15 - 21       | Write articles for the Dev community discussing Schema Composition |
+| May 22 - 28          | Discuss project implementation ideas with mentor, and attend weekly meetings|
+| May 29    - June 4 | Create a basic API interface and integrate the JSON Schema |
+| June 5 - 11  | Map and implement the functions needed to validate simple data types |
+| June 12 - June 18| Map and implement the functions needed to validate properties |
+| June 19 - June 25 |Map and implement the functions needed to validate more complex data types (objects and arrays) |
+| July 3 - July 9 |Create schema composition and validate conditions |
+| July 10 - July 14 |Perform an overview of the project alongside the mentor to submit the midterm evaluations|
+| July 15 - July 31 | Map and implement the functions needed to validate user input based on the schema, and test and debug the functions |
 | July 10  - July 14     | Perform a overview of the project alongside the mentor to submit the midterm evalutions        |
-| July 14 - August 14  | Work Period  | GSoC contributors work on their project with guidance from Mentors           |
-| August 14 - 21  | Perform a review of code style and quality, create developer documentation, and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
+| July 15 - August 14  |  Write documentation and create user guides, conduct user acceptance testing and make necessary revisions   | GSoC contributors work on their project with guidance from Mentors           |
+| August 14 - 21  | Finalize the project and deploy the API, provide support for any issues or bugs that may arise and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
 | August 21 - 28  | Final week: GSoC contributors submit their final work product and their final mentor evaluation (standard coding period) |
 | August 28 - September 4  | Mentors submit final GSoC contributor evaluations (standard coding period) |
 | September 5          | Initial results of Google Summer of Code 2023 announced                      |
 | September 4 - November 6 | GSoC contributors with extended timelines continue coding                  |
 | November 6    | Final date for all GSoC contributors to submit their final work product and final evaluation |
 | November 13   | Final date for mentors to submit evaluations for GSoC contributor projects with extended deadlines |
+
+
+
 
 **Why me**
 =====================
