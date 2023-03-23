@@ -31,35 +31,110 @@ At this moment in my career I’m focusing on building projects using TypeScript
 
 **Requirements**
 =====================
+## **Functional Requirements**
 
-| Functional | Non-Functional|
-| ------------- | ------------- |
-|Should be able to accept a valid JSON Schema and a JSON document as input.|Should be implemented using TypeScript.|
-|Should add missing values to the JSON document with a default specified in the JSON Schema.|Should work with the latest version of JSON Schema.|
-|Should remove properties from the JSON document that are not described in the JSON Schema.|Should be well-tested, with tests written in JSON.|
-|Should be able to accept a query string from a form post and convert it to JSON using the JSON Schema to know the types for the values.|Should be efficient and able to handle large JSON documents and schemas.|
-||Should be easy to use.|
-||Should Have clear documentation.|
 
+### **Add default values to JSON document**
+- Accept a valid JSON Schema and a JSON document as input.
+- Assign a default value to a property, object, or items of an array in the JSON document if it is present but has a null or undefined value.
+- Add missing properties to an object in the JSON document if a corresponding default value is specified in the JSON schema.
+- Add missing items to an array in the JSON document with a default specified in the JSON schema.
+- Add properties with default values specified in the JSON schema to the JSON document if they are not present in the document.
+- Handle conflicts when multiple defaults are specified for the same property by using the last default specified in the JSON schema (or define a specific priority rule for handling these conflicts).
+- If a property or item is missing from the JSON document and no default value is specified in the JSON schema, the utility should not add the property or item to the JSON document and should not modify the existing document in any way.
+- Provide clear error messages and handle errors gracefully to minimize disruption to the user.
+
+---
+### **Remove properties not described in JSON schema**
+
+- Accept a valid JSON Schema and a JSON document as input.
+- Remove properties from an object in the JSON document if they are not described in the JSON schema.
+- Remove objects in the JSON document if they are not described in the JSON schema.
+- Remove an item from an array that is not described in the schema.
+- Provide clear error messages and handle errors gracefully to minimize disruption to the user.
+
+---
+### **Convert form post query string to JSON using JSON Schema**
+
+
+- Convert a query string from a form post to JSON using the JSON schema to determine the types for the values.
+- Handle conflicts when a parameter is present in both the query string and JSON schema with different types by using the type specified in the JSON schema.
+- Handle cases where the query string contains multiple values for the same property and specify which one (if any) will be used.
+- Output the updated JSON document.
+- Accept only valid JSON Schema and query strings from a form post (application/x-www-form-urlencoded).
+- Convert string values to the appropriate types based on the schema (e.g., "1" to 1 for a number property).
+- Ignore properties not described in the schema.
+- Manage required properties in the JSON schema:
+  - If a required property is not present in the query string, return an error.
+  -  If a required property is present in the query string but has an incorrect type, return an error.
+- Implement error handling:
+  - If an invalid JSON schema is provided, return an error.
+  - If an invalid query string is provided, return an error.
+Output the converted JSON object.
+
+
+## **Non-Functional Requirements**
+
+- Implement the project using TypeScript
+- Ensure compatibility with the latest version of JSON Schema
+- Write well-structured and well-tested code, with tests described in JSON for ease of use by other developers
+- Ensure efficiency and the ability to handle large JSON documents and schemas
+- Provide clear documentation for users to easily understand how to use the utilities
+- Use consistent naming conventions and code style for maintainability and readability
 
 **Implementation**
 =====================
-  
-- Create the API interface so that I can have a clearer understanding of what is needed:
-  - How the JSON Schema is integrated
-  - How the data will be treated and validated
-  - What the output will be
-- Map all the functions needed to validate whether the JSON follows the JSON Schema standard:
-  - Map the simple validations: string, number, boolean, object, array, and null
-  - Map properties
-  - Map more complex validations, such as objects and arrays
-  - Create schema composition
-  - Validate conditions
-- Map all the functions needed to validate if the user input is valid based on the schema:
-  - Validate simple types
-  - Validate values based on properties (min: 10 max:20 value: 15 true)
-  - Validate conditional values.
-- Write documentation and create user guides
+
+### **Add default values to JSON document**
+
+- Design the API interface for the utility:
+  - Define the function signature for accepting a JSON Schema and JSON document
+  - Determine the output format
+- Develop functions to parse and validate the JSON Schema:
+  - Parse and validate simple types: string, number, boolean, object, array, and null
+  - Parse and validate default values for properties, objects, and items of arrays
+- Develop functions to add default values to the JSON document:
+  - Add default values to properties, objects, and items of arrays when they are missing or have null or undefined values
+  - Handle conflicts when multiple defaults are specified for the same property (using the last default specified or a defined priority rule)
+- Implement error handling:
+  - Handle invalid JSON schemas and JSON documents
+  - Return clear error messages for various error scenarios
+- Write unit tests for each function to ensure correctness and reliability
+- Write documentation and create user guides for using the utility
+
+-----
+### **Remove properties not described in JSON schema**
+
+- Design the API interface for the utility:
+  - Define the function signature for accepting a JSON Schema and JSON document
+  - Determine the output format
+- Develop functions to parse and validate the JSON Schema:
+  - Parse and validate simple types: string, number, boolean, object, array, and null
+  - Parse and validate properties
+- Develop functions to remove properties, objects, and items from the JSON document not described in the JSON schema:
+  - Remove properties from an object in the JSON document
+
+---
+### **Convert form post query string to JSON using JSON Schema**
+
+- Design the API interface for the utility:
+    - Define the function signature for accepting a JSON Schema and query string
+    - Determine the output format
+- Develop functions to parse and validate the JSON Schema:
+  - Parse and validate simple types: string, number, boolean, object, array, and null
+  - Parse and validate properties, including required properties and property types
+- Develop functions to parse and validate the query string:
+  - Parse the query string into key-value pairs
+  - Validate the query string based on the JSON Schema
+- Develop functions to convert query string to JSON:
+  - Convert string values to appropriate types based on the schema
+  - Handle conflicts and multiple values for the same property
+  - Ignore properties not described in the schema
+- Implement error handling:
+  - Handle invalid JSON schemas and query strings
+  - Return clear error messages for various error scenarios
+- Write unit tests for each function to ensure correctness and reliability
+- Write documentation and create user guides for using the utility
 
 **Timeline**
 =====================
@@ -69,18 +144,11 @@ At this moment in my career I’m focusing on building projects using TypeScript
 | February 22 - March 19| ~~Find a cool project, join the community, hand in the qualification task, and create the proposal for the GSoC.~~   |
 | March 20 - April 4      | ~~Apply for the project and continue participating in the community.~~  |
 | April 27      | GSoC contributor proposal rankings due from Org Admins                        |
-| May 4 - 14           | Research and study the project, read documentation, and attend weekly meetings |
-| May 15 - 21       | Write articles for the Dev community discussing Schema Composition |
-| May 22 - 28          | Discuss project implementation ideas with mentor, and attend weekly meetings|
-| May 29    - June 4 | Create a basic API interface and integrate the JSON Schema |
-| June 5 - 11  | Map and implement the functions needed to validate simple data types |
-| June 12 - June 18| Map and implement the functions needed to validate properties |
-| June 19 - June 25 |Map and implement the functions needed to validate more complex data types (objects and arrays) |
-| June 26 - July 2 |Create schema composition and validate conditions |
-| July 3 - July 9 |Map and implement the functions needed to validate user input based on the schema, and test and debug the functions|
-| July 10 - July 14 |Perform an overview of the project alongside the mentor to submit the midterm evaluations  |
-| July 15 - July 31 |  Write documentation and create user guides, conduct user acceptance testing and make necessary revisions   | GSoC contributors work on their project with guidance from Mentors           |
-| August 1 - August 20 | Finalize the project and deploy the API, provide support for any issues or bugs that may arise and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
+| May 4 - 28           | Write articles for the Dev community discussing the use cases of Schema Composition, discuss my ideas on how to implement the project with the mentor, study more about the project and attend the weekly meetings of the project.| GSoC contributors get to know mentors, read documentation, get up to speed to begin working on their projects |
+| May 29    - July 10          | Phase 1      |
+| July 10  - July 14     | Perform a overview of the project alongside the mentor to submit the midterm evalutions        |
+| July 14 - August 14  | Phase 2  | GSoC contributors work on their project with guidance from Mentors           |
+| August 14 - 21  | Perform a review of code style and quality, create developer documentation, and prepare for the final evaluation. | GSoC contributors work on their project with guidance from Mentors           |
 | August 21 - 28  | Final week: GSoC contributors submit their final work product and their final mentor evaluation (standard coding period) |
 | August 28 - September 4  | Mentors submit final GSoC contributor evaluations (standard coding period) |
 | September 5          | Initial results of Google Summer of Code 2023 announced                      |
@@ -89,57 +157,49 @@ At this moment in my career I’m focusing on building projects using TypeScript
 | November 13   | Final date for mentors to submit evaluations for GSoC contributor projects with extended deadlines |
 
 
+### **Phase 1: May 29 - July 10**
+
+- Week 1 (May 29 - June 4)
+  - Define the API interfaces for all three projects
+  - Design the function signatures and output formats
+- Week 2 (June 5 - June 11)
+  - Develop functions to parse and validate JSON Schemas for all projects
+  - Start writing unit tests for JSON Schema parsing and validation functions
+- Week 3 (June 12 - June 18)
+  - Develop functions specific to each project (conversion, addition of default values, and removal of properties)
+  - Continue writing unit tests for each function
+- Week 4 (June 19 - June 25)
+  - Implement error handling for all projects
+  - Complete the development of all functions for each project
+- Week 5 (June 26 - July 2)
+  - Finalize unit tests and ensure proper code coverage
+  - Perform integration testing to validate the utilities' functionality
+- Week 6 (July 3 - July 10)
+  - Write documentation and create user guides for all projects
+  - Conduct a final review and address any remaining issues
 
 
-**My tech background**
+### **Phase 2: July 14 - August 14**
+
+- Week 1 (July 14 - July 20)
+  - Refine the utilities based on feedback from Phase 1
+  - Implement any additional features or improvements
+- Week 2 (July 21 - July 27)
+  - Perform additional testing, including edge cases, to ensure the reliability and stability of the utilities
+  - Address any issues discovered during testing
+- Week 3 (July 28 - August 3)
+  - Optimize the code for performance and readability
+  - Refactor the code as needed to improve maintainability
+- Week 4 (August 4 - August 10)
+  - Update documentation and user guides based on changes made during Phase 2
+  - Perform a final review of the utilities, documentation, and user guides
+- Week 5 (August 11 - August 14)
+  - Conduct a final round of testing to ensure no new issues were introduced during optimization and refactoring
+  - Package and prepare the utilities for release
+
+
+**Why me**
 =====================
-## **Projects**
 
-### [Portfolio](dellamora.dev)
-Nov 2022 - Jan 2023
-
-My portfolio website is a hub that showcases my programming articles, work experiences, and public projects and provides a clear overview of my skills. It serves as a personal hub, making it easy to find and access relevant information about me and my work, as well as how to contact me for potential job opportunities or collaborations. Whether you're seeking programming insights or looking for a new project to explore, my portfolio website has everything you need.
-
-On the technical side, I used TypeScript, Next.js to make the site work with SSR, Framer Motion to create the animations, and React-Query to fetch my articles. 
-
-You can read more about the development process [here](https://dev.to/dellamora/o-passo-a-passo-de-como-criei-meu-portfolio-e-como-voce-pode-fazer-o-mesmo-23kf)
-
-### [Rick and Morty Search](https://rickandmorty-ochre.vercel.app/)
-
-The main goal of this project was to create a simple application that would serve as a practical study for the use of TypeScript's generic types and the implementation of React Query. By using the Rick and Morty API to allow users to search for characters, episodes, and locations, this project provides a hands-on approach to learning these technologies.
-
-ps: this was such a fun project that I even wrote an article about it in Portuguese, and who knows, maybe in the future I'll translate it to English...[read here](https://dev.to/dellamora/criei-um-hook-personalizado-para-buscar-dados-da-api-do-rick-and-morty-com-react-query-1c7f)
-
-### [Todo App with Redux Toolkit and Zustand](https://todos-cyan-phi.vercel.app/)
-
-This is a Todo App project developed using two different libraries: Redux Toolkit and Zustand. Both libraries were used for state management in the application, allowing users to create, mark as complete, and delete tasks.
-
-### [DellaFlix](https://dellaflix.dellamora.dev/)
-
-I decided to develop a project inspired by Netflix when I faced the dilemma of every programmer who is building his portoflio, which project would be fun to work on?
-Dellaflix came up as the answer, since I would challenge myself both on the backend by developing a movie API and if the movie searched doesn't exist in my database, look it up in another API (The Movie Database) and on the frontend by cloning Netflix's design.
-
-**Stack**: React • TypeScript • NextJS• TailWindCSS• Express.js • Prisma/SQL/NoSQL
-
-## **Worked Experience**
-
-### RCX - Frontend Developer
-Feb 2023 - Present · 2 mos
-
-**Skills**: Redux.js Toolkit · Redux.js · HTML · React.js · JavaScript · Styled-components · CSS
-
-### Venturus - Frontend Developer
-February 2021 - September 2022 (1 year 8 months)
-
-I have had the opportunity to work on a wide range of projects and tasks.
-These include developing landing pages, creating a web crawler, and
-Page 1 of 2
-building two progressive web applications. Additionally, I have taken on
-the responsibility of **managing daily meetings, sprints, and tasks while also performing analysis on project structure and features to enhance user
-experience and developer experience through refactoring. I have documented
-projects** and worked closely with back-end developers and web designers to
-optimize usability. Finally, I have also organized various team-building events, including programming logic competitions, coding dojos, and other activities
-that promote collaboration and cohesion among team members.
-
- **Skills**: Redux.js · HTML · TypeScript · React.js · PWA (Progressive Web App) · JavaScript · Firebase · Styled-components · React.Konva · Material-UI · Bootstrap · Figma (Software) · Redux.Sagas
-
+Eu realmente amo programar e me diverto quando estou me sentindo desafiada. Acredito que estou qualificada para esse projeto,  quero desevolver ele e vou dar o meu melhor.
+Eu já estou famili
