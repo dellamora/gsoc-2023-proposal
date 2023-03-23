@@ -29,9 +29,8 @@ At this moment in my career I’m focusing on building projects using TypeScript
 - Mentor: [@jdesrosiers](https://github.com/jdesrosiers)
 - Description: This project aims to provide a set of transformation utilities that utilize the information in a JSON Schema beyond validation. The utilities to be implemented include adding missing values with a default specified in the JSON Schema, removing properties in a JSON document that are not described in the JSON Schema, and converting a query string from a form post to JSON using the JSON Schema to determine the types of the values. The goal is to implement these utilities in any language and ensure compatibility with at least the latest version of JSON Schema. Additionally, the project intends to provide test cases in JSON format to enable others to use them when writing similar tools in different languages. By doing so, the project hopes to contribute to the JSON Schema community and provide valuable resources for developers working with JSON Schema.
 
-**Requirements**
-=====================
-## **Functional Requirements**
+
+# **Functional Requirements**
 
 
 ### **Add default values to JSON document**
@@ -73,7 +72,7 @@ At this moment in my career I’m focusing on building projects using TypeScript
 Output the converted JSON object.
 
 
-## **Non-Functional Requirements**
+# **Non-Functional Requirements**
 
 - Implement the project using TypeScript
 - Ensure compatibility with the latest version of JSON Schema
