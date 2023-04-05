@@ -5,6 +5,7 @@
 - Github: [@dellamora](https://github.com/dellamora)
 - Personal Website: [Dellamora.dev](https://www.dellamora.dev/)
 - Articles: [Dev.to](https://dev.to/dellamora)
+- Twitch: [Dellamora](https://www.twitch.tv/dellamora)
 - Linkedin: [Francielle Dellamora](https://www.linkedin.com/in/francielle-dellamora-3579301a1/)
 - Location: Porto Alegre, Brazil
 - Time Zone: UTC-3
@@ -135,6 +136,14 @@ Output the converted JSON object.
 - Write unit tests for each function to ensure correctness and reliability
 - Write documentation and create user guides for using the utility
 
+
+
+
+
+
+
+
+
 **Timeline**
 =====================
 
@@ -203,7 +212,7 @@ Output the converted JSON object.
 
 During my exploration of the project's documentation and completion of the qualification task, I found myself having a lot of fun. While I did get confused by some of the schema composition cases, such as anyOf, allOf, and oneOf, I also felt like there was still so much more to learn. As an enthusiastic programmer, I am always eager to take on new challenges, and this project provides an ideal opportunity for me to utilize my passion for coding and my previous experience with the Zod validation library to develop utilities for manipulating JSON Schema using TypeScript.
 
-Furthermore, I am highly motivated to continue learning and growing both personally and professionally. This year, I have set goals for myself to actively participate in open-source projects and start live coding on Twitch again. I am confident that this program will allow me to accomplish these goals while also gaining valuable experience in the field.
+Furthermore, I am highly motivated to continue learning and growing both personally and professionally. This year, I have set goals for myself to actively participate in open-source projects and start live coding on [Twitch](https://www.twitch.tv/dellamora) again. I am confident that this program will allow me to accomplish these goals while also gaining valuable experience in the field.
 
 In addition to my technical skills and motivation, I am committed to providing ongoing support to the open-source community.  I believe that open-source projects provide a unique opportunity for individuals to come together and create something truly remarkable, and I am excited to be a part of that process ensuring that the utilities developed during this program continue to serve the needs of users.
 
