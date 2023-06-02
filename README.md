@@ -151,8 +151,8 @@ Output the converted JSON object.
 |----------------------|------------------------------------------------------------------------------|
 | February 22 - March 19| ~~Find a cool project, join the community, hand in the qualification task, and create the proposal for the GSoC.~~   |
 | March 20 - April 4      | ~~Apply for the project and continue participating in the community.~~  |
-| April 27      | GSoC contributor proposal rankings due from Org Admins                        |
-| May 4 - 28           | Write articles for the Dev community discussing the use cases of Schema Composition, discuss my ideas on how to implement the project with the mentor, study more about the project and attend the weekly meetings of the project.| GSoC contributors get to know mentors, read documentation, get up to speed to begin working on their projects |
+| April 27      | ~~GSoC contributor proposal rankings due from Org Admins~~                    |
+| May 4 - 28           | ~~Write articles for the Dev community discussing the use cases of Schema Composition, discuss my ideas on how to implement the project with the mentor, study more about the project and attend the weekly meetings of the project.| GSoC contributors get to know mentors, read documentation, get up to speed to begin working on their projects~~|
 | May 29    - July 10          | Phase 1      |
 | July 10  - July 14     | Perform a overview of the project alongside the mentor to submit the midterm evalutions        |
 | July 14 - August 14  | Phase 2  | GSoC contributors work on their project with guidance from Mentors           |
